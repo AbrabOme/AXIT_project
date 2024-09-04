@@ -362,4 +362,53 @@ button.nav-link{
 }
 
 
+.awasome-section{
+    width: 100%;
+    padding: 70px 0px;
 
+}
+
+.awasome-section h1, .awasome-section p,.awasome-section h4, .awasome-section {
+    text-align: center !important;
+}
+
+.awasome-section h1{
+    font-family: "Raleway", sans-serif;
+}
+
+.awasome-section .underline {
+    margin-bottom: 20px;
+    margin-top: 25px;
+    width: 70px;
+}
+
+
+.awasome-section p{
+    margin-bottom: 60px;
+}
+
+
+.awasome-section .mid-part p{
+    width: 99%;
+}
+
+.awasome-section .mid-part i {
+    font-size: 31px;
+    border: 2px solid #ff8b38;
+    color: #ff8b38;
+    border-radius: 50%;
+    padding: 35px;
+    width: 60px;
+    height: 60px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.awasome-section .mid-part i:hover {
+    color: #fff;
+    background-color: #ff8b38;
+}

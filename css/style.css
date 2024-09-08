@@ -51,7 +51,7 @@ header{
 
 /* ............................................................................................................. */
 
-.navbar .nav-link{
+/* .navbar .nav-link{
     color: white;
 }
 
@@ -73,16 +73,66 @@ header{
 
 }
 
-.nav-item:hover::after{
+.nav-link:hover::after{
     transform: scale(100%,100%);
     transition: 0.5s;
     
 
 }
-
+.nav-link.active::after {
+    width: 100%;
+}
 .nav-item .active{
     color: white !important;
+} */
+
+
+
+.nav-item{
+    margin-left: 15px;
 }
+
+.nav-link:hover{
+    color: #ef7c29 !important;
+}
+
+.nav-item .active:hover{
+    color: #ef7c29 !important;
+}
+
+.nav-item .active {
+    color: white !important;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link {
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.5s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ef7c29;
+    transition: all 0.5s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+/* ................................................................................................. */
 
 .cus-height{
     height: 100vh;
@@ -198,6 +248,12 @@ header{
     width: 100%;
     padding: 12px 0px;
     border-bottom: 2px solid #b7b7b7;
+}
+
+
+.social-section .align-items-center {
+    align-items: center!important;
+    margin-top: 5px;
 }
 
 
@@ -408,7 +464,255 @@ button.nav-link{
     transition: 0.5s;
 }
 
-.awasome-section .mid-part i:hover {
+.awasome-section .mid-part:hover i{
     color: #fff;
     background-color: #ff8b38;
+}
+
+
+.price-section{
+    width: 100%;
+    padding: 80px 0px;
+    background: #f5f5f5;
+}
+
+
+.price-section h2, .price-section p{
+    text-align: center;
+}
+
+.price-section .underline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 78px;
+}
+
+.price-section .align-items-center {
+    align-items: center!important;
+    margin-bottom: 60px;
+}
+.price-section .card {
+    margin: 0px 25px;
+}
+
+.price-section .card .card-header{
+    background: #333;
+    padding: 10px 0 5px;
+    border-radius: 0 !important;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.price-section .card .card-header h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+.price-section .card-body{
+    background: #333;
+    padding: 0;
+    border-bottom: 5px solid #ff8b38;
+}
+
+.price-section .card-body h1{
+    font-size: 94px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 700;
+}
+
+.price-section .card-body span{
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-weight: 700;
+} 
+
+.price-section .card-body p{
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: #86878b;
+    font-style: italic;
+
+}
+
+.cus-body{
+    border-bottom: none !important;
+}
+
+.cus-footer{
+    border: none !important;
+}
+.price-section .card-footer{
+    padding: 0;
+}
+
+.cus-list{
+    background: #ff8b38;
+    color: white;
+    font-weight: 700;
+}
+
+.customer-section{
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.customer-section h2, .customer-section .col-lg-12 p{
+    text-align: center;
+}
+
+.customer-section .col-lg-12 p {
+    margin-bottom: 50px;
+}
+
+.customer-section .underline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 78px;
+}
+
+
+
+.t-inner .parent{
+    background: #f5f5f5;
+    padding: 20px 20px 10px;
+    width: 78%;
+    position: relative;
+}
+
+.t-inner .parent p{
+    font-style: italic;
+    font-size: 14px
+    
+}
+
+.t-inner .parent .child{
+    position: absolute;
+    background: #f5f5f5;
+    width: 35px;
+    height: 35px;
+    transform: rotate(45deg);
+    bottom: -11px;
+    left: 19px;
+}
+
+.t-inner .intro{
+    display: flex;
+    margin-top: 30px;
+}
+
+.t-inner .intro .left{
+    margin-right: 20px;
+}
+
+.t-inner .intro .right{ 
+    margin-top: 6px;
+}
+
+.style-section{
+    width: 100%;
+    background: url(../img/custom.png) center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+}
+
+.style-section h2, .style-section p{
+    color: #fff;
+}
+
+.style-section h2 {
+    margin-top: 80px;
+}
+
+
+.style-section .underline{
+    background: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.style-section .btns{
+    align-items: center;
+}
+
+.contact-section{
+    text-align: center;
+    padding: 60px 0px
+}
+
+.contact-section .underline{
+    width: 78px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+form .form-inner{
+    display: flex;
+    padding: 70px 30px;
+}
+
+form .form-inner .left{
+    flex-basis: 50%;
+    margin-right: 35px;
+}
+
+form .form-inner .right{
+    flex-basis: 50%;
+    margin-left: 15px;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    color: #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    background: transparent;
+    border: none;
+    color: #c5c5c5;
+    border-bottom: 1px solid #c5c5c5;
+    font-size: 14px;
+    height: 155px;
+    padding: 5px;
+}
+
+.contact-section .btns .btn {
+    font-size: 14px;
+    color: white;
+    background: #ff8b38;
+    font-weight: 400;
+    padding: 13px 25px;
+    border-radius: 4px;
+    margin-top: -90px;
+}
+
+.icon-foot{
+    background: #000;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.icon-foot ul li a i{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.icon-foot p {
+    margin-top: 10px;
+    margin-bottom: 5px;
 }

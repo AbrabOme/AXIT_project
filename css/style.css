@@ -616,7 +616,6 @@ button.nav-link{
     width: 100%;
     background: url(../img/custom.png) center center no-repeat;
     background-size: cover;
-    height: 100vh;
     text-align: center;
 }
 
@@ -637,6 +636,10 @@ button.nav-link{
 
 .style-section .btns{
     align-items: center;
+}
+
+.style-section .btns a {
+    margin-bottom: 40px;
 }
 
 .contact-section{
@@ -667,7 +670,7 @@ form .form-inner .right{
     margin-left: 15px;
 }
 
-input {
+.contact-section input {
     width: 100%;
     margin-bottom: 30px;
     background: transparent;
@@ -703,16 +706,40 @@ textarea {
 .icon-foot{
     background: #000;
     padding: 10px 0px;
-    text-align: center;
+    text-align: center !important;
 }
 
-.icon-foot ul li a i{
+.icon-foot .social-icons-2 ul li a i{
     font-size: 30px;
-    text-align: center;
+    text-align: center !important;
     margin-top: 15px;
+    color: #cccccc;
+    transition: 0.5s;
 }
+
+.icon-foot .social-icons-2 ul li a i:hover{
+    color: #ff8b38;
+    transition: 0.5s;
+}
+
+
+.icon-foot .social-icons-2 ul{
+    margin: 0;
+    padding: 0;
+}
+
+.icon-foot .social-icons-2 a, a:hover{
+    text-decoration: none;
+}
+
 
 .icon-foot p {
     margin-top: 10px;
     margin-bottom: 5px;
+}
+
+.icon-foot .social-icons-2 ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 40px;
 }
